@@ -1,0 +1,8 @@
+<h1>This is HTML!!!!</h1>
+
+<form method="POST" action="{% url 'count' %}">
+  {% csrf_token %}
+  <textarea name="full-text" cols="40" rows="10"></textarea> <br>
+  <br>
+  <input type="submit" value="count" />
+</form>
